@@ -17,19 +17,16 @@ const tTransform = getID('text-transform');
 const fColor = getID('font-color');
 
 function eventFunction(property, value1, value2, e) {
+    console.log(e.target.parentNode);
     if (textBox.style[property] === `${value1}`) {
         textBox.style[property] = `${value2}`;
         e.target.parentNode.classList.remove('bg-red-400')
-        // this.style.backgroundColor = 'red'
     } else {
         e.target.parentNode.classList.add('bg-red-400')
         textBox.style[property] = `${value1}`;
-        // this.style.backgroundColor = ''
     }
 }
 
 boldText.addEventListener('click', (e) => eventFunction('fontWeight', 'bold', 'normal', e));
-
-italicText.addEventListener('click', function() {
-    eventFunction('fontStyle', 'italic', 'normal');
-})
+italicText.addEventListener('click', (e) => eventFunction('fontStyle', 'italic', 'normal', e));
+underlineText.addEventListener('click', (e) => eventFunction('textDecoration', 'underline', 'none', e));
