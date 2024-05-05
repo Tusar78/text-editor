@@ -16,20 +16,20 @@
             <div class="w-4/5 mx-auto border border-black bg-blue-200 p-3">
                 <div class="flex justify-between items-center border-b border-black pb-2 mb-4">
                     <div class="flex items-center gap-4">
-                        <span class="px-2"><i class="fa-solid fa-bold"></i></span>
-                        <span class="p-1"><i class="fa-solid fa-italic"></i></span>
-                        <span class="p-1"><i class="fa-solid fa-underline"></i></span>
+                        <span id="bold" class="px-1 cursor-pointer"><i class="fa-solid fa-bold"></i></span>
+                        <span id="italic" class="px-1 cursor-pointer"><i class="fa-solid fa-italic"></i></span>
+                        <span id="underline" class="px-1 cursor-pointer"><i class="fa-solid fa-underline"></i></span>
                     </div>
                     <div class="flex items-center gap-4">
-                        <span><i class="fa-solid fa-align-left"></i></span>
-                        <span><i class="fa-solid fa-align-center"></i></span>
-                        <span><i class="fa-solid fa-align-right"></i></span>
-                        <span><i class="fa-solid fa-align-justify"></i></span>
+                        <span id="align-left"><i class="fa-solid fa-align-left"></i></span>
+                        <span id="align-center"><i class="fa-solid fa-align-center"></i></span>
+                        <span id="align-right"><i class="fa-solid fa-align-right"></i></span>
+                        <span id="align-justify"><i class="fa-solid fa-align-justify"></i></span>
                     </div>
                     <div class="flex items-center gap-4">
-                        <input type="number">
-                        <span>aA</span>
-                        <input type="color">
+                        <input id="font-size" type="number" value="16" class="w-12">
+                        <span class="text-transform">aA</span>
+                        <input id="font-color" type="color">
                     </div>
                 </div>
                 <textarea class="w-full h-96 p-4" name="" id=""></textarea>
