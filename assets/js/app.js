@@ -30,3 +30,15 @@ function eventFunction(property, value1, value2, e) {
 boldText.addEventListener('click', (e) => eventFunction('fontWeight', 'bold', 'normal', e));
 italicText.addEventListener('click', (e) => eventFunction('fontStyle', 'italic', 'normal', e));
 underlineText.addEventListener('click', (e) => eventFunction('textDecoration', 'underline', 'none', e));
+alignLeft.addEventListener('click', (e) => eventFunction('textAlign', 'left', 'unset', e));
+alignCenter.addEventListener('click', (e) => eventFunction('textAlign', 'center', 'unset', e));
+alignRight.addEventListener('click', (e) => eventFunction('textAlign', 'right', 'unset', e));
+alignJustify.addEventListener('click', (e) => eventFunction('textAlign', 'justify', 'unset', e));
+tTransform.addEventListener('click', (e) => eventFunction('textTransform', 'uppercase', 'none', e));
+
+fSize.addEventListener('change', () => {
+    textBox.style.fontSize = `${fSize.value}px`;
+})
+fColor.addEventListener('input', () => {
+    textBox.style.color = `${fColor.value}`;
+})
